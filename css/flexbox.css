@@ -1,0 +1,27 @@
+
+.flex-box01{
+    display: flex;
+    flex-direction: row;
+    color: brown;
+    /* 정렬기준 */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-box{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rebeccapurple;
+}
+
+.box01 {
+    font-size: 20px;
+}
+
+.box02 {
+    font-size: 20px;
+}
+
+.box03 {
+    font-size: 20px;
+}
