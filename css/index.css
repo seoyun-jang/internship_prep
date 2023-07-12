@@ -1,0 +1,56 @@
+/* css 연결하기 */
+
+/* 
+기본 구성
+selector{
+    property:value
+ }
+  */
+
+#hello{
+    color:red
+}
+.text{
+    color: rgb(7, 74, 119);
+    font-size:25px;
+}
+
+/* 모든 요소에 적용
+*{
+  color:red;  
+} */
+
+h2{
+    color:aquamarine;
+}
+
+.box01{
+    box-sizing: content-box;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: red;
+    color: white;
+}
+
+.box02{
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 1px solid #000;
+    background-color: rgb(44, 86, 201);
+    color: white;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    color: white
+}
+
+.inner{
+    width: 50%;
+    height: 50%;
+}
