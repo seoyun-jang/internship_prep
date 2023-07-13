@@ -226,3 +226,49 @@ console.log('바깥', value)
 while은 조건을 만족하는 동안 loop가 반복된다.
 do while문의 경우 do가 먼저 수행되기 때문에 while과 수행 횟수가 다를 수 있다.
 */
+
+
+let arr = [1, 2, 3];
+
+// 배열 마지막에 인자 추가
+arr.push("hello");
+console.log(arr)
+
+// 배열의 마지막값을 제거
+arr.pop();
+console.log(arr);
+
+arr = [1, 2, 3,
+      "Hello"];
+
+// 배열을 역순으로 정렬
+arr.reverse();
+console.log(arr)
+
+// 배열을 정렬
+arr = [3, 4, 2, 1]
+arr.sort()
+
+
+ // 연산자 - and && 
+ // ex. 여자이면서 25세 이상인 경우
+ function andEx(gender, age){
+    if (gender == 'female' && age > 24){
+        return true;
+    }
+    return false;
+ }
+
+ console.log(andEx("male", 26));
+
+ // 연산자 - or ||
+// ex. 여자이거나 25세 이상인 경우
+function orEx(gender, age){
+    if (gender == 'female' || age > 24){
+        return true;
+    }
+    return false;
+ }
+
+ console.log(orEx("male", 26));
+  
