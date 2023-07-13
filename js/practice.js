@@ -48,7 +48,16 @@ console.log(findMax(array))
 
 
 // 3. 함수를 이용한 구구단 만들기
+
 let input = Number(prompt('입력 : ', '숫자'))
-for (i=1;i<10;i++ ){
+for (i=1;i<10;i++){
     console.log(`${input} * ${i} = ${input * i}`)
 }
+
+function gugudan(num){
+    for (i=1;i<10;i++){
+        console.log(`${input} * ${i} = ${input * i}`)
+    }
+}
+
+gugudan(5)
