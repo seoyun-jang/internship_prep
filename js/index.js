@@ -139,3 +139,90 @@ let obj1 = {
 }
 
 console.log(obj1.sayHi());
+
+function Hello(name, age){
+    console.log(`hello ${name} you are ${age} years old`);
+}
+
+Hello("John", 22);
+
+//function은 object안에서도 사용할 수 있다.
+// function은 object안의 변수들을 사용할 수 있다.
+
+let myObject = {
+    name: "Kim",
+    age: 32,
+    sayMyName: function() {
+        console.log(`My name is ${this.name}.`);
+    }
+}
+
+myObject.sayMyName();
+
+
+// 반복문 for
+for(let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+for (let k = 0; k<30; k++) {
+    if (k % 2 == 0) {
+        console.log(k);
+    }
+}
+
+let array = ['사과', '배', '복숭아'];
+
+for (let j=0; j < array.length; j++) {
+    console.log(array[j]);
+}
+
+let m = 0
+for (m; m < 3; m = m + 2) {
+    console.log(m);
+}
+
+for(m = 3; m < 5; m = m + 4) {
+    console.log(m);
+}
+
+
+// 반복문 for in
+for (let index in array){
+    console.log(index);
+}
+
+// 반복문 for of
+for (let element of array) {
+    console.log(element);
+}
+
+/* 
+for in의 경우 배열의 index를,
+for of는 배열의 value를 반환한다. 
+*/
+
+
+//while 문
+n = 0
+while (n <5){
+    console.log(n);
+    n = n + 2;
+}
+
+console.log('바깥', n)
+
+// do-while 문
+
+let value = 0
+do {
+    console.log(value);
+    value++
+} while (value <5);
+
+console.log('바깥', value)
+
+/* 
+while은 조건을 만족하는 동안 loop가 반복된다.
+do while문의 경우 do가 먼저 수행되기 때문에 while과 수행 횟수가 다를 수 있다.
+*/
