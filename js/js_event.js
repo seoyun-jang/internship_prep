@@ -56,19 +56,34 @@ function handleClick(){
     }
 }
 
-title.addEventListener("click", handleClick)
+// title.addEventListener("click", handleClick)
 
-title.addEventListener("mouseenter", handleClick)
+// title.addEventListener("mouseenter", handleClick)
 
 
 /* 컬러가 4개 이상 들어가 있는 배열을 만들고
  특정 이벤트를 통해 랜덤으로 컬러가 선택되게 만들기 */
 
-let colorArr = ["red", "blue", "green", "orange"]
+// let colorArr = ["red", "blue", "green", "orange"]
 
-function randomColor(){
-    let index = Math.floor(Math.random() * 4)
-    title.style.color = colorArr[index]
+// function randomColor(){
+//     let index = Math.floor(Math.random() * 4)
+//     title.style.color = colorArr[index]
+// }
+
+// title.addEventListener("mousemove", randomColor);
+
+
+//solution
+const colors = ["red", "blue", "green", "yellow", "pink", "purple"]
+
+function createRandomInt() {
+    return Math.floor(Math.random() * 6);
 }
 
-title.addEventListener("mousemove", randomColor);
+function handleClicker() {
+    let randomInt = createRandomInt();
+    title.style.color = color[randomInt];
+}
+
+title.addEventListener("click", handleClicker)
