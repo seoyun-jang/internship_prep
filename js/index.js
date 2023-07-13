@@ -88,3 +88,54 @@ switch(n % 2){
         console.log('숫자가 아닙니다.');
         break;
 }
+
+let daysOfWeek = ["Monday", "Tuesday", "wednesday",
+                  "Tursday", "Friday", "Saturday", "Sunday"]
+
+console.log(daysOfWeek[1]); // 0부터 시작
+
+// Array & Object
+
+let obj = {
+    name : "yun",
+    age : 27,
+    occupation: "student",
+    isMarried: false,
+    favoriteMovies: ["Elemental", "inception"],
+    favoriteFoods: [{
+        food: "Tomato",
+        isHealthy: true},
+        {food: "Pizza",
+        isHealthy: false}]
+};
+
+console.log(obj.name);
+
+
+// Function
+function sayHello(){
+    console.log("hello");
+}
+
+sayHello();
+sayHello();
+sayHello();
+
+function addNum(a, b) {
+    console.log(a + b);
+}
+
+addNum(2, 3);
+
+let result = addNum(3, 4);
+console.log(result);
+
+let obj1 = {
+    name: "Kim",
+    age: 34,
+    sayHi: function(){
+        return "Hi 12312131312313"
+    }
+}
+
+console.log(obj1.sayHi());
