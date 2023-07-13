@@ -54,6 +54,8 @@ for (i=1;i<10;i++){
     console.log(`${input} * ${i} = ${input * i}`)
 }
 
+
+// 함수로 만들기
 function gugudan(num){
     for (i=1;i<10;i++){
         console.log(`${input} * ${i} = ${input * i}`)
@@ -61,3 +63,19 @@ function gugudan(num){
 }
 
 gugudan(5)
+
+/* 1 부터 30까지 숫자를 돌면서 3의 배수면 "fizz", 5의 배수면 "buzz",
+3과 5의 배수면 "fizzbuzz", 나머지는 그냥 출력.*/
+
+for(i=1;i<31;i++){
+    if (i % 3 == 0 && i % 5 == 0){
+        console.log("fizzbuzz")
+    } else if(i % 3 == 0){
+        console.log("fizz")
+    } else if(i % 5 == 0){
+        console.log("buzz")
+    } else{
+        console.log(i)
+    }
+} 
+
