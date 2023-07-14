@@ -8,3 +8,5 @@
 ### day 2
 - javaScript
 
+## day 3 ** 오프라인 교육
+- 
