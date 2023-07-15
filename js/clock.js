@@ -1,5 +1,5 @@
 
-const clock = document.querySelector("js-clock")
+const clockContainer = document.querySelector("js-clock")
 
 const clockTitle = clock.clockContainer.querySelector("h1")
 
