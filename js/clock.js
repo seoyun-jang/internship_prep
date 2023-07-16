@@ -25,4 +25,5 @@ getTime();
 // 실시간을 업로드 하기 위해 setInterval을 사용
 setInterval(getTime, 1000)
 
-// clockTitle.addEventListener("click", )
+setInterval(getTime, 10000)
+// clockTitle.addEventListener("click")
