@@ -63,6 +63,8 @@ title.addEventListener("mouseenter", handleClick)
 
 /* 컬러가 4개 이상 들어가 있는 배열을 만들고
  특정 이벤트를 통해 랜덤으로 컬러가 선택되게 만들기 */
+// addEventListener
+
 
 let colorArr = ["red", "blue", "green", "orange"]
 
@@ -86,4 +88,11 @@ function handleClicker() {
     title.style.color = color[randomInt];
 }
 
-title.addEventListener("click", handleClicker)
+title.addEventListener("click", handleClicker);
+
+// p.querySelector("#main, #title, #footer");
+
+getElementById("title").onclick
+getElementsByid("title").onclick = function();
+
+title.addEventListener("click", changeColor)

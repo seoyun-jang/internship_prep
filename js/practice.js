@@ -97,3 +97,20 @@ function fizzbuzz(){
 }
 
 fizzbuzz()
+
+
+/*반복문을 이용해서 원하는 데이터 출력하기 */
+let data = [
+    {no:0, id:"red", sex:"남자", age:21},
+    {no:1, id:"yellow", sex:"남자", age:17},
+    {no:2, id:"orange", sex:"여자", age:16},
+    {no:3, id:"green", sex:"여자", age:55}
+    
+];
+
+for(let d of data){
+    if(d.age > 21 && d.sex == "여성"){
+        console.log(d)
+    }
+}
+
