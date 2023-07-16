@@ -1,7 +1,7 @@
 
-const clock = document.querySelector("js-clock")
+const clockContainer = document.querySelector(".js-clock")
 
-const clockTitle = clock.clockContainer.querySelector("h1")
+const clockTitle = clockContainer.querySelector("h1")
 
 function getTime(){
     let date = new Date();
@@ -23,5 +23,6 @@ let a = (조건) ? "true" : "false";
 getTime();
 
 // 실시간을 업로드 하기 위해 setInterval을 사용
-setInterval(getTime, 10000)
-clockTitle.addEventListener("click")
+setInterval(getTime, 1000)
+
+// clockTitle.addEventListener("click", )

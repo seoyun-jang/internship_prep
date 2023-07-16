@@ -1,18 +1,17 @@
-const form = document.querySelector(".js-form");
 //js.-form은 class이기 때문에 .을 붙인다.
 
+const form = document.querySelector(".js-form");
 const input = form.querySelector("input")
-
 const greeting = document.querySelector(".js-greetings")
 
 function showGreeting(name){
     // form에 있는 class를 제거해서 안보이게 하고
     // greeting 요소를 보이게 하기!
-    greeting.innerText(`안녕하세요 ${name}`)
+    greeting.innerText = `안녕하세요 ${name}`;
 }
 
 function saveName(name){
-    localStorage.setItem("currentUser", name)
+    localStorage.setItem("currentUser", name);
 }
 
 function handleSubmit(event){
