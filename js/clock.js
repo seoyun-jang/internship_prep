@@ -18,12 +18,11 @@ function getTime(){
 /*
 3항 연산
 let a = (조건) ? "true" : "false";
-조건을 만족하면 true를 만족false로 변경한다.*/
+조건을 만족하면 true를, 아닌 경우 false로 변경한다.*/
 
 getTime();
 
 // 실시간을 업로드 하기 위해 setInterval을 사용
 setInterval(getTime, 1000)
 
-setInterval(getTime, 10000)
 // clockTitle.addEventListener("click")
