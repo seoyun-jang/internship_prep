@@ -1,7 +1,17 @@
-/* .js.form{
-    display: none;
-} */
+.js-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+}
 
-.show{
+.js-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.show {
     display: block;
 }

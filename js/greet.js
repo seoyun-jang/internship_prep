@@ -9,6 +9,9 @@ function showGreeting(name) {
     // form에 있는 class를 제거해서 안 보이게 하고
     // greeting 요소를 보이게 하기
     greeting.innerText = `안녕하세요 ${name}`;
+    //const textBox = document.querySelector("input")
+    //form.classList.remove()
+
     console.log(`안녕하세요 ${name}`);
 }
 
@@ -25,10 +28,12 @@ function handleSubmit(event) {
     console.log(value);
     showGreeting(value);
     saveName(value);
+
 }
 
 function askForName(){
     // submit : enter(제출)
+
     form.addEventListener("submit", handleSubmit);
 }
 
@@ -40,8 +45,11 @@ function loadName(){
         askForName(); 
 
     } else {
+        localStorage.removeItem("currentUser")
         showGreeting(currentUser);
+
     }
+
 }
 
 
